@@ -52,10 +52,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--One Player Game View Controller-->
         <scene sceneID="RvO-Ei-tPU">
             <objects>
-                <viewController id="zSM-mh-Yk9" sceneMemberID="viewController">
+                <viewController id="zSM-mh-Yk9" customClass="OnePlayerGameViewController" customModule="myApp2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="goP-wO-znh"/>
                         <viewControllerLayoutGuide type="bottom" id="P3N-xa-FOY"/>
@@ -63,17 +63,130 @@
                     <view key="view" contentMode="scaleToFill" id="6FZ-m9-rIA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJN-bl-9Xd">
+                                <rect key="frame" x="16" y="179" width="164" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quP-8u-59y">
+                                <rect key="frame" x="16" y="274" width="164" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLG-1O-eNs">
+                                <rect key="frame" x="16" y="358" width="164" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lp-nr-mPy">
+                                <rect key="frame" x="16" y="450" width="164" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b50-Nt-YQz">
+                                <rect key="frame" x="188" y="179" width="160" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-Ro-atc">
+                                <rect key="frame" x="188" y="274" width="160" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kwM-D2-iQY">
+                                <rect key="frame" x="188" y="358" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMq-Te-ciB">
+                                <rect key="frame" x="188" y="450" width="160" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-Rq-YyG">
+                                <rect key="frame" x="72" y="44" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enemy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpx-eN-Hyp">
+                                <rect key="frame" x="247" y="44" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L90-tI-Mto">
+                                <rect key="frame" x="165" y="39" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="zSM-mh-Yk9" eventType="touchUpInside" id="RyL-NF-Mh2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74q-3u-gqa">
+                                <rect key="frame" x="72" y="86" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2I-8Z-Gxd">
+                                <rect key="frame" x="255" y="86" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aE-CJ-4Rk">
+                                <rect key="frame" x="72" y="115" width="42" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zf1-Qj-AdA">
+                                <rect key="frame" x="16" y="533" width="164" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2o5-VY-xw5">
+                                <rect key="frame" x="188" y="533" width="160" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCL-QZ-zF2">
+                                <rect key="frame" x="255" y="122" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enemyLabel" destination="Vpx-eN-Hyp" id="V01-g3-2dc"/>
+                        <outlet property="enemyScoreLabel" destination="J2I-8Z-Gxd" id="8na-1C-Zdf"/>
+                        <outlet property="finalCardImageView" destination="zf1-Qj-AdA" id="RFb-Ft-pfD"/>
+                        <outlet property="finalEnemyCardImageView" destination="2o5-VY-xw5" id="FnX-G7-E6D"/>
+                        <outlet property="firstBetCardImageView" destination="quP-8u-59y" id="rrZ-vB-DHI"/>
+                        <outlet property="firstCardImageView" destination="rJN-bl-9Xd" id="3cS-ui-eTA"/>
+                        <outlet property="firstEnemyBetCardImageView" destination="iqL-Ro-atc" id="mFE-ZT-6B1"/>
+                        <outlet property="firstEnemyCardImageView" destination="b50-Nt-YQz" id="pyD-FQ-9ZC"/>
+                        <outlet property="playButton" destination="L90-tI-Mto" id="QUl-SC-vYA"/>
+                        <outlet property="playerLabel" destination="Rsy-Rq-YyG" id="ULo-S4-Frr"/>
+                        <outlet property="playerScoreLabel" destination="74q-3u-gqa" id="o9m-t3-lve"/>
+                        <outlet property="secondBetCardImageView" destination="rLG-1O-eNs" id="55b-fw-6R4"/>
+                        <outlet property="secondEnemyBetCardImageView" destination="kwM-D2-iQY" id="JFM-ut-sfH"/>
+                        <outlet property="thirdBetCardImageView" destination="5Lp-nr-mPy" id="q66-21-pO1"/>
+                        <outlet property="thirdEnemyBetCardImageView" destination="gMq-Te-ciB" id="cg3-lg-Ukm"/>
+                        <outlet property="totalLosses" destination="QCL-QZ-zF2" id="tnZ-JX-dN4"/>
+                        <outlet property="totalLossesLabel" destination="QCL-QZ-zF2" id="3w9-xa-zdz"/>
+                        <outlet property="totalWins" destination="5aE-CJ-4Rk" id="SlO-aN-fmS"/>
+                        <outlet property="totalWinsLabel" destination="5aE-CJ-4Rk" id="oev-TR-oVB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCL-D9-mnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="-664"/>
+            <point key="canvasLocation" x="1261.5999999999999" y="-664.31784107946032"/>
         </scene>
-        <!--View Controller-->
+        <!--Two Player View Controller-->
         <scene sceneID="nfe-WB-Vbe">
             <objects>
-                <viewController id="f9s-KJ-CVb" sceneMemberID="viewController">
+                <viewController id="f9s-KJ-CVb" customClass="TwoPlayerViewController" customModule="myApp2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jsR-Da-Cug"/>
                         <viewControllerLayoutGuide type="bottom" id="MBg-VO-Aor"/>
@@ -81,12 +194,132 @@
                     <view key="view" contentMode="scaleToFill" id="ZAn-cb-RT7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-2b-bJE">
+                                <rect key="frame" x="16" y="152" width="153" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dea-Th-UzJ">
+                                <rect key="frame" x="16" y="247" width="153" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ois-C9-qat">
+                                <rect key="frame" x="16" y="331" width="153" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wsk-R2-ZTO">
+                                <rect key="frame" x="16" y="411" width="153" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZn-Mb-GMb">
+                                <rect key="frame" x="199" y="20" width="160" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C08-I2-6Dp">
+                                <rect key="frame" x="199" y="115" width="160" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1h2-9l-F7f">
+                                <rect key="frame" x="199" y="283" width="160" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-SE-pOs">
+                                <rect key="frame" x="72" y="53" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pix-hn-I4Y">
+                                <rect key="frame" x="239" y="569" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAY-oJ-u2g">
+                                <rect key="frame" x="84" y="8" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playerOnePlayButtonTapped:" destination="f9s-KJ-CVb" eventType="touchUpInside" id="EE5-xC-Owe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxm-mm-dAv">
+                                <rect key="frame" x="78" y="86" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-TF-PLd">
+                                <rect key="frame" x="247" y="598" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcM-NA-yl1">
+                                <rect key="frame" x="247" y="627" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gh-dP-Cde">
+                                <rect key="frame" x="78" y="123" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Iw-x1-2tj">
+                                <rect key="frame" x="16" y="494" width="153" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltO-nY-GJg">
+                                <rect key="frame" x="199" y="368" width="160" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCV-NE-SPp">
+                                <rect key="frame" x="253" y="531" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playerTwoPlayButtonTapped:" destination="f9s-KJ-CVb" eventType="touchUpInside" id="nU8-m8-yQd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phu-Rx-tdi">
+                                <rect key="frame" x="199" y="197" width="160" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="firstPlayerFinalBetCardImageView" destination="GPv-2b-bJE" id="j5l-ax-hOb"/>
+                        <outlet property="firstPlayerFirstBetCardImageView" destination="Wsk-R2-ZTO" id="vIL-ZK-xPP"/>
+                        <outlet property="firstPlayerFirstCardImageView" destination="4Iw-x1-2tj" id="Ry5-wY-Ccm"/>
+                        <outlet property="firstPlayerSecondBetCardImageView" destination="Ois-C9-qat" id="0ir-C3-FIE"/>
+                        <outlet property="firstPlayerThirdBetCardImageView" destination="dea-Th-UzJ" id="5yy-eh-0J4"/>
+                        <outlet property="playerOneLabel" destination="rmQ-SE-pOs" id="vhA-ka-ibm"/>
+                        <outlet property="playerOnePlayButton" destination="gAY-oJ-u2g" id="r6Y-Ia-lWj"/>
+                        <outlet property="playerOneScoreLabel" destination="Gxm-mm-dAv" id="KAV-gB-Bt6"/>
+                        <outlet property="playerOneTotalWins" destination="7Gh-dP-Cde" id="pwu-ZX-0qg"/>
+                        <outlet property="playerTwoLabel" destination="Pix-hn-I4Y" id="3tf-Bs-sF1"/>
+                        <outlet property="playerTwoPlayButton" destination="uCV-NE-SPp" id="t1n-wc-5Ww"/>
+                        <outlet property="playerTwoScoreLabel" destination="cWT-TF-PLd" id="gMu-eX-44S"/>
+                        <outlet property="playerTwoTotalWins" destination="hcM-NA-yl1" id="iuk-Ck-kQP"/>
+                        <outlet property="secondPlayerFinalBetCardImageView" destination="ltO-nY-GJg" id="G7R-AL-KRs"/>
+                        <outlet property="secondPlayerFirstBetCardImageView" destination="C08-I2-6Dp" id="k5T-aj-T22"/>
+                        <outlet property="secondPlayerFirstCardImageView" destination="nZn-Mb-GMb" id="7Bs-Ft-vY4"/>
+                        <outlet property="secondPlayerSecondBetCardImageView" destination="phu-Rx-tdi" id="EcM-qH-5gi"/>
+                        <outlet property="secondPlayerThirdBetCardImageView" destination="1h2-9l-F7f" id="j4b-gg-hEu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2W-RR-dRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="161"/>
+            <point key="canvasLocation" x="1261.5999999999999" y="160.56971514242881"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZFp-F3-0b3">

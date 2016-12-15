@@ -14,6 +14,8 @@
 		3F41002E1DF07EE600BF171F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41002C1DF07EE600BF171F /* LaunchScreen.storyboard */; };
 		3F4100391DF07EE600BF171F /* myApp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4100381DF07EE600BF171F /* myApp2Tests.swift */; };
 		3F4100441DF07EE600BF171F /* myApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4100431DF07EE600BF171F /* myApp2UITests.swift */; };
+		3FC3F6621E019B9000E23719 /* OnePlayerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3F6611E019B9000E23719 /* OnePlayerGameViewController.swift */; };
+		3FC3F6641E019FCE00E23719 /* TwoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3F6631E019FCE00E23719 /* TwoPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F41003F1DF07EE600BF171F /* myApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4100431DF07EE600BF171F /* myApp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApp2UITests.swift; sourceTree = "<group>"; };
 		3F4100451DF07EE600BF171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC3F6611E019B9000E23719 /* OnePlayerGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePlayerGameViewController.swift; sourceTree = "<group>"; };
+		3FC3F6631E019FCE00E23719 /* TwoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				3F4100231DF07EE600BF171F /* AppDelegate.swift */,
 				3F4100251DF07EE600BF171F /* ViewController.swift */,
+				3FC3F6611E019B9000E23719 /* OnePlayerGameViewController.swift */,
+				3FC3F6631E019FCE00E23719 /* TwoPlayerViewController.swift */,
 				3F4100271DF07EE600BF171F /* Main.storyboard */,
 				3F41002A1DF07EE600BF171F /* Assets.xcassets */,
 				3F41002C1DF07EE600BF171F /* LaunchScreen.storyboard */,
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4100261DF07EE600BF171F /* ViewController.swift in Sources */,
+				3FC3F6621E019B9000E23719 /* OnePlayerGameViewController.swift in Sources */,
+				3FC3F6641E019FCE00E23719 /* TwoPlayerViewController.swift in Sources */,
 				3F4100241DF07EE600BF171F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 				3F41004A1DF07EE600BF171F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F41004B1DF07EE600BF171F /* Build configuration list for PBXNativeTarget "myApp2Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				3F41004D1DF07EE600BF171F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F41004E1DF07EE600BF171F /* Build configuration list for PBXNativeTarget "myApp2UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				3F4100501DF07EE600BF171F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
