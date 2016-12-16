@@ -73,6 +73,9 @@ class OnePlayerGameViewController: UIViewController
             let firstBetNumber:Int = Int(arc4random_uniform(13))
             let firstBetCardString : String = self.cardNamesArray[firstBetNumber]
           self.firstBetCardImageView.image = UIImage(named: firstBetCardString)
+            let firstEnemyBetNumber :Int = Int(arc4random_uniform(13))
+            let firstEnemyBetCardString : String = self.cardNamesArray[firstEnemyBetNumber]
+            self.firstEnemyBetCardImageView.image = UIImage(named: firstEnemyBetCardString)
         }
         else
         {

@@ -63,10 +63,13 @@ class TwoPlayerViewController: UIViewController
         super.viewDidLoad()
         self.playerOnePlayButton.setTitle("Play", for: UIControlState())
         self.playerTwoPlayButton.setTitle("Play", for: UIControlState())
+        playerOnePlayButton.tag = 0
+        playerTwoPlayButton.tag = 0
     }
     var cardNamesArray: [String] = ["aceOfSpades","aceOfDiamonds","aceOfClubs","aceOfHearts","twoOfSpades","twoOfHearts", "threeOfSpades","threeOfHearts","threeOfClubs","threeOfDiamonds", "fourOfSpades","fourOfDiamonds","fourOfClubs","fourOfHearts","fiveOfSpades","fiveOfClubs","fiveOfHearts","fiveOfDiamonds","sixOfSpades","sixOfClubs","sixOfDiamonds","sixOfHearts","sevenOfSpades","sevenOfDiamonds","sevenOfClubs","sevenOfHearts","eightOfSpades","eightOfDiamonds","eightOfClubs","eightOfHearts","nineOfSpades","nineOfDiamonds","nineOfClubs","nineOfHearts","tenOfSpades","tenOfClubs","tenOfHearts","tenOfDiamonds","jackOfSpades","jackOfDiamonds","jackOfClubs","jackOfHearts","queenOfSpades","queenOfDiamonds","queenOfClubs","queenOfHearts","kingOfSpades","kingOfDiamonds","kingOfClubs","kingOfHearts"]
     @IBAction func playerOnePlayButtonTapped(_ sender: UIButton)
     {
+        playerOnePlayButton.tag = 1
         self.playerOnePlayButton.setTitle("Play Round", for: UIControlState.normal)
         
         // Randomly chooses cards for First ImageView
@@ -77,10 +80,18 @@ class TwoPlayerViewController: UIViewController
         
         // Set the first card image view to the asset corresponding to the randomized number
         self.firstPlayerFirstCardImageView.image = UIImage(named: firstCardString)
-        checkCards()
+        
+        if playerOnePlayButton.tag == 1 && playerTwoPlayButton.tag == 1
+        {
+            checkCards()
+        }
+        
+        
+        
     }
     @IBAction func playerTwoPlayButtonTapped(_ sender: Any)
     {
+        playerTwoPlayButton.tag = 1
         self.playerTwoPlayButton.setTitle("Play Round", for: UIControlState.normal)
         
         // Second card
@@ -88,6 +99,9 @@ class TwoPlayerViewController: UIViewController
         let secondCardString:String = self.cardNamesArray[secondRandomNumber]
         
         self.secondPlayerFirstCardImageView.image = UIImage(named: secondCardString)
+        if playerOnePlayButton.tag == 1 && playerTwoPlayButton.tag == 1
+        {
         checkCards()
+        }
     }
 }
