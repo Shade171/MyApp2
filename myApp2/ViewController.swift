@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    @IBOutlet weak var onePlayerButton: UIButton!
+    @IBOutlet weak var twoPlayerButton: UIButton!
     override func viewDidLoad()
     {
         super.viewDidLoad()
