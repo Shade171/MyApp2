@@ -753,6 +753,8 @@ class OnePlayerGameViewController: UIViewController
                     deckTwo.remove(at: card2Value)
                     winPileOne.append(card1Value)
                     winPileOne.append(card2Value)
+                    deckOne.append(card1Value)
+                    deckTwo.append(card2Value)
                     save()
                 }
                 else
@@ -771,6 +773,8 @@ class OnePlayerGameViewController: UIViewController
                     deckTwo.remove(at: card2Value)
                     winPileTwo.append(card1Value)
                     winPileTwo.append(card2Value)
+                    deckOne.append(card1Value)
+                    deckTwo.append(card2Value)
                     save()
                 }
             }
@@ -782,6 +786,8 @@ class OnePlayerGameViewController: UIViewController
                 deckTwo.remove(at: card2Value)
                 winPileTwo.append(card1Value)
                 winPileTwo.append(card2Value)
+                deckOne.append(card1Value)
+                deckTwo.append(card2Value)
                 save()
             }
         if deckOne.isEmpty == true && winPileOne.isEmpty == false
