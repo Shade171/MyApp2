@@ -12,9 +12,11 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var onePlayerButton: UIButton!
     @IBOutlet weak var twoPlayerButton: UIButton!
+    @IBOutlet weak var myImageView: UIImageView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        myImageView.image = UIImage(named: "titleOfGame")
     }
 }
 

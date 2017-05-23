@@ -10,25 +10,21 @@ import UIKit
 
 class TotalWinsandLosses: NSObject, NSCoding
 {
-    var wins : Int
-    var losses : Int
+    var winsAndLosses : Int
     
-    init(wins: Int,losses: Int)
+    init(winsAndLosses: Int)
     {
-        self.wins = wins
-        self.losses = losses
+        self.winsAndLosses = winsAndLosses
     }
     
     required init?(coder aDecoder: NSCoder)
     {
-        wins = aDecoder.decodeObject(forKey:"win") as! Int
-        losses = aDecoder.decodeObject(forKey:"losses") as! Int
+        winsAndLosses = aDecoder.decodeObject(forKey:"winAndLosses") as! Int
     }
     
     func encode(with aCoder: NSCoder)
     {
-        aCoder.encode(wins, forKey:"win")
-        aCoder.encode(losses, forKey:"losses")
+        aCoder.encode(winsAndLosses, forKey:"winAndLosses")
     }
 
 }
